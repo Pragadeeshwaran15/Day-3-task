@@ -1,0 +1,223 @@
+Task-1:Simple Programs todo for variables;
+
+1.Declare four variables without assigning values and print them in console
+Answer:
+       var a;
+       var b;
+       var c;
+       var d;
+
+2.How to get value of the variable myvar as output
+Answer:
+       var myvar=10;
+       console.log(myvar)
+
+3.Declare variables to store your first name, last name, marital status, country and age in multiple lines
+Answer:
+       var firstname="Hari";
+       var lastname="ram";
+       var maritalstatus="single";
+       var country="India";
+       var age=23;
+
+4.Declare variables to store your first name, last name, marital status, country and age in a single line
+Answer:
+       var details={firstname:"Hari",lastname:"ram",maritalstatus:"single",country:"India",age:23}
+
+5.Declare variables and assign string, boolean, undefined and null data types
+Answer:
+       var x="hello";
+       var y=true;
+       var z;
+       var h=null;
+
+
+6.Convert the string to integer
+Answer:
+       parseInt()
+       Plus sign(+)
+
+7.Write 6 statement which provide truthy & falsey values.
+Answer:
+      1.var a=12; var b=12; var c=a===b
+         (Output=>True)
+
+      2.var x=10; var y=8; var z=x<y   
+         (Output=>falsey)
+
+      3.var a=5; var b=3; var c=a>b   
+         (Output=>True)
+
+      4.var x=10; var y=10; var z=x!==y
+         (Output=>False)
+
+      5.var x=5; var y=10; var z=x*2==y
+         (Output=>True)
+
+      6. var a=5; var b=a%2==0 
+          (Output=False)
+_________________________________________________________________________________________________________________________________________________________
+Task 2: Simple Programs todo for Operators
+
+1.Square of a number
+Answer:
+    var a=4;
+    console.log(a*a)
+
+2.Swapping 2 numbers
+Answer:
+    var a=2;
+    var b=4;
+    var temp;
+    temp = a;
+       a = b;
+       b = temp;
+
+console.log("The value of a after swapping"a); (a=4)
+console.log("The value of b after swapping",b); (b=2)
+
+3.Addition of 3 numbers
+Answer:
+     var a=1;
+     var b=2;
+     var c=3;
+     console.log(a+b+c) output=>"6"
+
+4.Celsius to Fahrenheit conversion
+Answer:
+     var Celsius=10;
+     var Fahrenheit=(Celsius*(9/5))+32;
+     console.log(Fahrenheit)    output=>"50"
+
+5.Meter to miles
+Answer:
+     var Meter= 10;
+     var Mile=Meter*0.000621371;
+     console.log(Mile)    output=>"0.00621371"
+
+6.Pounds to kg
+Answer:
+     var Pounds= 5;
+     var Kg=Pounds*0.453592;
+     console.log(kg)      output=>"2.26796"
+
+7.Calculate Batting Average
+Answer:
+      var match1=55;
+      var match2=62;
+      var Average=(match1+match2)/2
+      console.log(Average)  output=>"58.8"
+
+8.Calculate five test scores and print their average
+Answer:
+      var match1=78
+      var match2=45
+      var match3=89
+      var match4=104
+      var match5=50
+      var Average=(match1+match2+match3+match4+match5)/5
+      console.log(Average)  output=>"73.2"
+
+9.Power of any number x ^ y.
+Answer:
+      var x=2;
+      var y=2;
+      console.log(Math,pow(x,y))
+ 
+ 10.Calculate Simple Interest
+ Answer:
+       var p = 1000; // Principal amount
+       var r = 0.05; // Rate of interest
+       var t = 2;    // Time in years
+       var interest = (p * r * t) / 100; 
+       console.log("Simple Interest=" + interest);
+
+11.Calculate area of an equilateral triangle
+Answer:
+     var A=5;
+     var area=((Math.sqrt(3)/4))*(Math.pow(A,2))
+     console.log(area)
+
+12.Area Of Isosceles Triangle
+Answer:
+     var b=2; //base
+     var h=5; //height
+     var area=(b*h)/2;
+     console.log(area)
+
+13.Volume Of Sphere
+Answer:
+     var r=10;
+     var volume=((4/3)*3.14*(Math.pow(r,3)))
+     console.log(volume)
+
+14.Volume Of Prism
+Answer:
+    var b=10;
+    var h=8;
+    var volume=b*h;
+    console.log(volume)
+
+15.Find area of a triangle.
+Answer:
+     var b=2; //base
+     var h=5; //height
+     var area=(b*h)/2;
+     console.log(area) 
+
+16.Give the Actual cost and Sold cost, Calculate Discount Of Product
+ Answer:
+      var price=150;
+      var soldcost=130;
+      var discount=(((price-soldcost)/price)*100)
+      console.log(discount);
+
+17.Given their radius of a circle and find its diameter, circumference and area.
+Answer:
+   var r=5;   //r=>radius
+   var diameter=r*2;
+   var circumference=2*3.14*r;
+   var area=3.14(r*r);
+   console.log(diameter,circumference,area)
+
+18.Given two numbers and perform all arithmetic operations.
+Answer:
+   var a=5;
+   var b=2;
+   console.log(a+b);
+   console.log(a-b);
+   console.log(a*b);
+   console.log(a/b);
+
+19.Display the asterisk pattern as shown below(No loop needed):
+*****
+*****
+*****
+*****
+*****
+Answer:
+    console.log("*****");
+    console.log("*****");
+    console.log("*****");
+    console.log("*****");
+    console.log("*****");
+
+20.Calculate electricity bill?
+For example, a consumer consumes 100 watts per hour daily for one month. Calculate the total energy bill of that consumer if per unit rate is 10?
+Answer:
+
+    var onemonthWatts=72000;  // one unit is equal to 1000 watts
+    var unitPrice=10
+    var totalPrice=(onemonthWatts/1000)*10;
+    console.log(totalPrice)
+
+_________________________________________________________________________________________________________________________________________________________
+
+Task 3: Simple Programs todo for Condition , Looping and Arrays;
+
+1.Write a loop that makes seven calls to console.log to output the following triangle:
+Answer:
+
+for (let i = "#";i.length < 8; i += "#")
+  console.log(i);
+
